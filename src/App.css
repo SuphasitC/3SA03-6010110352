@@ -5,7 +5,9 @@
 .App-logo {
   height: 40vmin;
 }
+
 .card {
+  color: orange;
   display: inline-block;
   text-align: center;
   width: 3em;
@@ -14,7 +16,8 @@
   margin: 1em;
   user-select: none;
 }
-  .activeCard { 
+
+.activeCard { 
   color: red; 
   background: pink; 
 }

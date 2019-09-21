@@ -5,7 +5,7 @@ import './App.css';
 var vocab = ["hello", "world", "computer"]
 let randomIndex = parseInt(Math.random() * 3)
 
-class App extends Component{  
+class App extends Component{ 
   render(){
     return ( 
       <div className="App">

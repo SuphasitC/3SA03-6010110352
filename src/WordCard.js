@@ -28,16 +28,16 @@ export default class Wordcard extends Component {
             if(guess.join('').toString() == this.state.word){
                 this.setState({guess: [], completed: true})
             }else{    
-            let chars = _.shuffle(Array.from(this.state.word))
-            this.setState({guess: [], chars:chars, attempt: this.state.attempt + 1})
+                let chars = _.shuffle(Array.from(this.state.word))
+                this.setState({guess: [], chars:chars, attempt: this.state.attempt + 1})
             }
         }
-}
-        render() {
-            return (
-                <div className="App">
-                    {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} attempt = {this.state.attempt} activationHandler={this.activationHandler}/>)}
-                </div>
-         );
+    }
+    render() {
+        return (
+            <div className="App">
+                {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} attempt = {this.state.attempt} activationHandler={this.activationHandler}/>)}
+            </div>
+        );
     }
 }
